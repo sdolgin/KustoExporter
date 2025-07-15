@@ -3,6 +3,19 @@
 
 This repo contains Python scripts for exporting Kusto (Azure Data Explorer) table and function schemas to individual KQL files.
 
+---
+
+## 🎯 Goals & Recommended Scenarios
+
+KustoExporter is designed to help you manage your Kusto (Azure Data Explorer) database schemas and functions as code. The primary goals and scenarios include:
+
+- **Version Control for KQL Objects**: It is a best practice to maintain all your KQL objects (tables, functions, etc.) under version control. This enables you to track changes, collaborate with your team, and roll back to previous versions if needed.
+- **Enabling Code Reviews and Collaboration**: By exporting your KQL schema to files, you can leverage pull requests, code reviews, and branch workflows—just like with application code.
+- **AI-Assisted Development**: With your KQL schema and functions stored in a repository, AI coding tools such as GitHub Copilot can reason over your KQL system. This allows Copilot to provide context-aware suggestions, generate queries, and assist with schema evolution based on the definitions in your repo.
+- **Documentation and Auditing**: Keeping your KQL definitions in a repo provides a clear, auditable history and serves as up-to-date documentation for your data platform.
+
+KustoExporter streamlines the process of exporting, validating, and organizing your KQL objects, making it easier to adopt modern DevOps and AI-powered workflows for your data analytics environment.
+
 ## ✅ Enhanced Features
 
 - **Color-coded Logging**: Visual feedback for status, progress, warnings, and errors
