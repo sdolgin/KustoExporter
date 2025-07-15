@@ -94,6 +94,16 @@ python export-table-schemas.py -c "https://cluster.kusto.windows.net" -d "Databa
 python export-function-schemas.py -c "https://cluster.kusto.windows.net" -d "DatabaseName" -o "function_exports"
 ```
 
+### Export Both Tables & Functions (Batch Script)
+
+You can use the provided batch script to export both tables and functions in one step:
+
+```cmd
+run_export_cluster_objects.bat -c "https://cluster.kusto.windows.net" -d "DatabaseName" -o "exports"
+```
+
+This will run both export scripts with the specified cluster and database.
+
 #### Parameters
 
 - `-c, --cluster`: Kusto cluster URL (required)
